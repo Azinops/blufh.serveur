@@ -17,7 +17,7 @@
 
 #define TAILLE_ECRITUR_SCORE 42
 
-#define FPS 50.00
+#define FPS 25.00
 
 #define OBTENIRMOUSEETKEY al_get_mouse_state(&mouse);\
                          al_get_keyboard_state(&key);
