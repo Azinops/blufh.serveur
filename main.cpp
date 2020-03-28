@@ -22,7 +22,7 @@
 #include "f_map.h"
 #include "f_main.h"
 #include "sockets.h"
-#define IP "192.168.1.35"
+#define IP "192.168.1.12"
 
 using namespace std;
 
@@ -79,18 +79,25 @@ int main()
     al_start_timer(timer);
     while(!fin)
     {
-        ESCAPE
         OBTENIRMOUSEETKEY
         EVENT
-        if(event.type==ALLEGRO_EVENT_KEY_DOWN && touche_appuyee(TOUCHE_RECOMMENCER))
+        if(event.type==ALLEGRO_EVENT_KEY_DOWN)
         {
-            init_map(iBlocs);
-            copier_joueurs(joueurs,joueurs_i);
-            encoder_charactere(msg_map,'M');
-            coder_map(msg_map);
-            envoyer_msg(msg_map);
+            if(touche_appuyee(TOUCHE_RECOMMENCER))
+            {
+                init_map(iBlocs);
+                copier_joueurs(joueurs,joueurs_i);
+                encoder_charactere(msg_map,'M');
+                coder_map(msg_map);
+                envoyer_msg(msg_map);
+            }
+            if(touche_appuyee(TOUCHE_QUITTER))
+            {
+                envoyer_msg("F");
+                fin=1;
+            }
         }
-        if(event.type == ALLEGRO_EVENT_TIMER)
+        if(event.type == ALLEGRO_EVENT_TIMER && !fin)
         {
             al_clear_to_color(beigef);
             Codage_donnees(joueurs);
@@ -106,6 +113,8 @@ int main()
             al_flip_display();
         }
     }
+    fermer_socket();
+    fermer_socket_receptrice();
 
     return 0;
 }

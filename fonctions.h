@@ -17,7 +17,7 @@
 
 #define TAILLE_ECRITUR_SCORE 42
 
-#define FPS 25.00
+#define FPS 30.00
 
 #define OBTENIRMOUSEETKEY al_get_mouse_state(&mouse);\
                          al_get_keyboard_state(&key);
@@ -118,8 +118,8 @@
                                                                 }\
                                                             }
 #define ESCAPE if(al_key_down(&key,ALLEGRO_KEY_F4)){\
-                fin=1;fermer_socket();fermer_socket_receptrice();}
-
+                fin=1;}
+#define TOUCHE_QUITTER ALLEGRO_KEY_F4
 
 int roundi(double variable);
 void erreur(const char*txt);

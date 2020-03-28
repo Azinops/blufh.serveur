@@ -1,5 +1,6 @@
 #include "client_sockets.h"
 #include "sockets.h"
+
 void init_w(char adr_ip[])
 {
     erreur=WSAStartup(MAKEWORD(2,2),&initialisation_win32);
@@ -49,7 +50,14 @@ void fermer_socket()
 }
 void envoyer_msg(char msg[])
 {
-    id_de_la_socket=socket(AF_INET,SOCK_STREAM,0);
+    if(PROTOCOLE==0)
+    {
+        id_de_la_socket=socket(AF_INET,SOCK_STREAM,0);
+    }
+    if(PROTOCOLE==1)
+    {
+        id_de_la_socket=socket(AF_INET,SOCK_DGRAM,0);
+    }
     if(AFFICHER_MSG)
           {
               if (id_de_la_socket==INVALID_SOCKET)
@@ -58,7 +66,14 @@ void envoyer_msg(char msg[])
                     printf("\nsocket      : OK");
           }
           tempo=1;
-          erreur=setsockopt(id_de_la_socket,IPPROTO_TCP,TCP_NODELAY,(char *)&tempo,sizeof(tempo));
+        if(PROTOCOLE==0)
+        {
+            erreur=setsockopt(id_de_la_socket,IPPROTO_TCP,TCP_NODELAY,(char *)&tempo,sizeof(tempo));
+        }
+        if(PROTOCOLE==1)
+        {
+            erreur=setsockopt(id_de_la_socket,IPPROTO_UDP,true,(char *)&tempo,sizeof(tempo));
+        }
           if(AFFICHER_MSG)
           {
               if (erreur!=0)
@@ -87,7 +102,14 @@ void envoyer_msg(char msg[])
 }
 void init_soc_receptrice()
 {
+    if(PROTOCOLE==0)
+    {
         id_de_la_socket2=socket(AF_INET,SOCK_STREAM,0);
+    }
+    if(PROTOCOLE==1)
+    {
+        id_de_la_socket2=socket(AF_INET,SOCK_DGRAM,0);
+    }
       if(AFFICHER_MSG)
       {
           if (id_de_la_socket2==INVALID_SOCKET)
@@ -100,7 +122,14 @@ void init_soc_receptrice()
       // Activation de l'option permettant d'activer l'algorithme de Nagle
       // ********************************************************
       tempo=1;
+      if(PROTOCOLE==0)
+    {
       erreur=setsockopt(id_de_la_socket2,IPPROTO_TCP,TCP_NODELAY,(char *)&tempo,sizeof(tempo));
+    }
+    if(PROTOCOLE==1)
+    {
+      erreur=setsockopt(id_de_la_socket2,IPPROTO_UDP,true,(char *)&tempo,sizeof(tempo));
+    }
       if(AFFICHER_MSG)
       {
           if (erreur!=0)

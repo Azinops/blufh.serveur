@@ -2,9 +2,10 @@
 #define SOCKETS_H_INCLUDED
 
 #define AFFICHER_MSG 0
-#define PORT_EMETTEUR 33333
+#define PORT_EMETTEUR 80
 #define PORT_RECEPTEUR 29979
 #define TAILLE_SOCKET 32000//Taille de la chaine de charactere max à envoyer/recevoir
+#define PROTOCOLE 0//0:TCP  1:UDP
 
 
 void init_w(char adr_ip[]);
