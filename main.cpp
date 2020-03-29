@@ -12,6 +12,7 @@
 #include <windows.h>
 #include <math.h>
 #include <winsock2.h>
+#include <thread>
 #pragma comment(lib,"ws2_32.lib")
 
 #include "fonctions.h"
@@ -28,6 +29,7 @@ using namespace std;
 
 int main()
 {
+
     plein_ecran();
     INITIALISER_BIBLIOTHEQUE
     srand(time(NULL));
@@ -48,8 +50,6 @@ int main()
 
     init_map(iBlocs);
 
-    lance_bombe joueurs[NBRE_JOUEURS];
-    lance_bombe joueurs_i[NBRE_JOUEURS];
     joueurs[0]=lance_bombe(iLance_bombe[1],TAILLEC_LB_I,ALLEGRO_KEY_Z,ALLEGRO_KEY_S,ALLEGRO_KEY_Q,ALLEGRO_KEY_D,ALLEGRO_KEY_SPACE,0,bombe_de_jet,bombe_pieges,ALLEGRO_KEY_E,ALLEGRO_KEY_LSHIFT);
     joueurs[0].tp(TAILLE_BLOCX*1.50,TAILLE_BLOCY*1.50);
     joueurs[1]=lance_bombe(iLance_bombe[2],TAILLEC_LB_I,ALLEGRO_KEY_UP,ALLEGRO_KEY_DOWN,ALLEGRO_KEY_LEFT,ALLEGRO_KEY_RIGHT,ALLEGRO_KEY_PAD_0,1,bombe_de_jet,bombe_pieges,ALLEGRO_KEY_PAD_1,ALLEGRO_KEY_RCTRL);
@@ -59,6 +59,7 @@ int main()
 
     char msg_map[N_CASES_X*N_CASES_Y+1];
     coder_map(msg_map);
+
 
     char ip_client[256]=IP;
     //cin>>ip_client;
@@ -73,15 +74,23 @@ int main()
     reception_j=recevoir_msg();
     cout<<reception_j<<endl;
 
+
     envoyer_msg(msg_map);
+    cout<<"Map envoyee"<<endl;
+
+
+    char *reception_j2=NULL;
+    reception_j2=recevoir_msg();
+    cout<<reception_j2<<", la partie peut commencer"<<endl;
 
 
     al_start_timer(timer);
     while(!fin)
     {
+
         OBTENIRMOUSEETKEY
         EVENT
-        if(event.type==ALLEGRO_EVENT_KEY_DOWN)
+        if(event.type==ALLEGRO_EVENT_KEY_DOWN && !fin)
         {
             if(touche_appuyee(TOUCHE_RECOMMENCER))
             {
@@ -103,18 +112,20 @@ int main()
             Codage_donnees(joueurs);
             envoyer_msg(get_packet());
             recevoir_touches(recevoir_msg());
-            joueurs[1].jouer_en_ligne();
-
-            init_joueurs(joueurs);
-            afficher_map();
-            Jouer(joueurs);
-            afficher_score(joueurs,font_scores);
-            afficher_explosions(joueurs);
-            al_flip_display();
+            fin=joueurs[1].jouer_en_ligne();
+            if(!fin)
+            {
+                init_joueurs(joueurs);
+                afficher_map();
+                Jouer(joueurs);
+                afficher_score(joueurs,font_scores);
+                afficher_explosions(joueurs);
+                al_flip_display();
+            }
         }
     }
+
     fermer_socket();
     fermer_socket_receptrice();
-
     return 0;
 }

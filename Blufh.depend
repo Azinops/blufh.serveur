@@ -655,7 +655,7 @@
 	<allegro5/allegro_image.h>
 	"Classes.h"
 
-1585328369 c:\users\edgar\desktop\tout\programmation\blufh.serveur\classes.h
+1585419647 c:\users\edgar\desktop\tout\programmation\blufh.serveur\classes.h
 	"souris_clavier.h"
 	"define_info.h"
 
@@ -674,7 +674,7 @@
 	<math.h>
 	"fonctions.h"
 
-1585399210 c:\users\edgar\desktop\tout\programmation\blufh.serveur\fonctions.h
+1585400077 c:\users\edgar\desktop\tout\programmation\blufh.serveur\fonctions.h
 	<sstream>
 
 1585319837 c:\users\edgar\desktop\tout\programmation\blufh.serveur\define_info.h
@@ -689,7 +689,7 @@
 	"define_info.h"
 	"f_map.h"
 
-1585328226 c:\users\edgar\desktop\tout\programmation\blufh.serveur\f_map.h
+1585419433 c:\users\edgar\desktop\tout\programmation\blufh.serveur\f_map.h
 	"define_info.h"
 	"Classes.h"
 
@@ -740,7 +740,7 @@
 	"affichage.h"
 	"define_info.h"
 
-1585334525 source:c:\users\edgar\desktop\tout\programmation\blufh.serveur\map.cpp
+1585421626 source:c:\users\edgar\desktop\tout\programmation\blufh.serveur\map.cpp
 	"map.h"
 	"affichage.h"
 	<allegro5/allegro.h>
@@ -753,7 +753,7 @@
 	"fonctions.h"
 	"Classes.h"
 
-1585326432 c:\users\edgar\desktop\tout\programmation\blufh.serveur\map.h
+1585418724 c:\users\edgar\desktop\tout\programmation\blufh.serveur\map.h
 	<allegro5/allegro.h>
 	"define_info.h"
 	"Classes.h"
@@ -782,7 +782,7 @@
 1573834224 c:\users\edgar\desktop\tout\programmation\blufh.serveur\v_souris_clavier.h
 	"souris_clavier.h"
 
-1585399574 source:c:\users\edgar\desktop\tout\programmation\blufh.serveur\main.cpp
+1585427410 source:c:\users\edgar\desktop\tout\programmation\blufh.serveur\main.cpp
 	<iostream>
 	<stdio.h>
 	<time.h>
@@ -797,6 +797,7 @@
 	<windows.h>
 	<math.h>
 	<winsock2.h>
+	<thread>
 	"fonctions.h"
 	"affichage.h"
 	"variables_main.h"
@@ -806,18 +807,9 @@
 	"f_main.h"
 	"sockets.h"
 
-1584885898 c:\users\edgar\desktop\tout\programmation\blufh.serveur\variables_main.h
+1585418864 c:\users\edgar\desktop\tout\programmation\blufh.serveur\variables_main.h
 	<iostream>
 	<stdio.h>
-	<string>
-	<time.h>
 	<stdlib.h>
-	<allegro5/allegro.h>
-	<allegro5/allegro_native_dialog.h>
-	<allegro5/allegro_font.h>
-	<allegro5/allegro_ttf.h>
-	<allegro5/allegro_primitives.h>
-	<allegro5/allegro_image.h>
-	<math.h>
 	"define_info.h"
 

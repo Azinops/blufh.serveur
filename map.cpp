@@ -270,7 +270,7 @@ void init_joueurs(lance_bombe joueursi[])
     int k;
     for(k=0;k<=NBRE_JOUEURS-1;k++)
     {
-        joueurs[k]=joueursi[k];
+        joueursT[k]=joueursi[k];
     }
 }
 int collision_spherique_joueur_ennemi(double x,double y,int j_allie,double rayon_sphere)
@@ -280,11 +280,11 @@ int collision_spherique_joueur_ennemi(double x,double y,int j_allie,double rayon
     double d=double(INFINITE);
     for(k=0;k<=NBRE_JOUEURS-1;k++)
     {
-        if(k!=j_allie && joueurs[k].get_vivant()==1)
+        if(k!=j_allie && joueursT[k].get_vivant()==1)
         {
-            if(distance(x,y,joueurs[k].get_x(),joueurs[k].get_y())<=d)
+            if(distance(x,y,joueursT[k].get_x(),joueursT[k].get_y())<=d)
             {
-                d=distance(x,y,joueurs[k].get_x(),joueurs[k].get_y());
+                d=distance(x,y,joueursT[k].get_x(),joueursT[k].get_y());
                 i=k;
             }
         }
@@ -308,10 +308,10 @@ double distance_bombe_jet_proche(double x,double y)
     {
         for(k=0;k<=NBRE_BOMBES_MAX-1;k++)
         {
-            if(joueurs[j].get_etat_bombe_jet(k)!=0)
+            if(joueursT[j].get_etat_bombe_jet(k)!=0)
             {
-                nd=distance(x,y,joueurs[j].get_x_bombe_jet(k),joueurs[j].get_y_bombe_jet(k));
-                if(nd<d && round(nd)!=0 && (joueurs[j].get_etat_bombe_jet(k)==2 || (joueurs[j].get_etat_bombe_jet(k)==3 && joueurs[j].get_etat_anim_bombe_jet(k)<=DERNIER_ETAT_LETHAL_ANIM_EXPLO1)))
+                nd=distance(x,y,joueursT[j].get_x_bombe_jet(k),joueursT[j].get_y_bombe_jet(k));
+                if(nd<d && round(nd)!=0 && (joueursT[j].get_etat_bombe_jet(k)==2 || (joueursT[j].get_etat_bombe_jet(k)==3 && joueursT[j].get_etat_anim_bombe_jet(k)<=DERNIER_ETAT_LETHAL_ANIM_EXPLO1)))
                 {
                     d=nd;
                 }
@@ -385,8 +385,8 @@ int bombe::collision_explo_croix_joueur()
         }
         for(j=0;j<=NBRE_JOUEURS-1;j++)
         {
-            ij[j][0]=i_map(joueurs[j].get_x());
-            ij[j][1]=j_map(joueurs[j].get_y());
+            ij[j][0]=i_map(joueursT[j].get_x());
+            ij[j][1]=j_map(joueursT[j].get_y());
         }
         xp=xi;
         yp=yi;
@@ -396,7 +396,7 @@ int bombe::collision_explo_croix_joueur()
             yp+=dy;
             for(j=0;j<=NBRE_JOUEURS-1;j++)
             {
-                if(xp==ij[j][0] && yp==ij[j][1] && joueurs[j].get_vivant()==1)
+                if(xp==ij[j][0] && yp==ij[j][1] && joueursT[j].get_vivant()==1)
                 {
                     if(FRIENDLY_FIRE==0)
                     {
@@ -624,10 +624,12 @@ void recevoir_touches(char* packet)
 {
     PACKET_TOUCHE=packet;
 }
-void lance_bombe::jouer_en_ligne()
+int lance_bombe::jouer_en_ligne()
 {
     origine=1;
     n_decode=0;
+    int f=0;
+    char msg_fin;
     haut=decoder_int(PACKET_TOUCHE,n_decode);n_decode+=NBRE_CHIFFRE_CODAGE_INT;
     bas=decoder_int(PACKET_TOUCHE,n_decode);n_decode+=NBRE_CHIFFRE_CODAGE_INT;
     gauche=decoder_int(PACKET_TOUCHE,n_decode);n_decode+=NBRE_CHIFFRE_CODAGE_INT;
@@ -635,4 +637,10 @@ void lance_bombe::jouer_en_ligne()
     touche_lance_bombe=decoder_int(PACKET_TOUCHE,n_decode);n_decode+=NBRE_CHIFFRE_CODAGE_INT;
     touche_pose_bombe_croix=decoder_int(PACKET_TOUCHE,n_decode);n_decode+=NBRE_CHIFFRE_CODAGE_INT;
     touche_position=decoder_int(PACKET_TOUCHE,n_decode);n_decode+=NBRE_CHIFFRE_CODAGE_INT;
+    msg_fin=PACKET_TOUCHE[n_decode];n_decode++;
+    if(msg_fin=='F')
+    {
+        f=1;
+    }
+    return f;
 }

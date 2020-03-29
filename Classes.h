@@ -146,7 +146,7 @@ public:
     void disparaitre();
     void tuer();
     void fixer_nkills(int n_kills);
-    void jouer_en_ligne();
+    int jouer_en_ligne();
 
     double get_x_bombe_jet(int n_bombe_jet);
     double get_y_bombe_jet(int n_bombe_jet);
