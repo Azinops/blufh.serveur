@@ -34,13 +34,13 @@ objet::objet(double xi,double yi,ALLEGRO_BITMAP* imagei,double taillei)
     filtre_g=VERT_I;
     filtre_b=BLEU_I;
 }
-void objet::initialiser(double xi,double yi,ALLEGRO_BITMAP* imagei,double taillei)
+void objet::initialiser(double xi,double yi,ALLEGRO_BITMAP* image_i,double taillei)
 {
     x=xi;
     y=yi;
     taille_x=taillei;
     taille_y=taillei;
-    dimensionner(imagei);
+    dimensionner(image_i);
     angle=0.00;
     flag=0;
     vx=0.00;

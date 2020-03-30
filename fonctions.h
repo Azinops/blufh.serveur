@@ -113,7 +113,7 @@
                                                                 nom[i]=al_load_bitmap(chemin);\
                                                                 if (!nom[i])\
                                                                 {\
-                                                                    std::cout<<":   ERREUR:BITMAP PAS CHARGE"<<endl;\
+                                                                    std::cout<<":   ERREUR:BITMAP PAS CHARGE"<<chemin<<endl;\
                                                                     erreur("al_load_bitmap()");\
                                                                 }\
                                                             }

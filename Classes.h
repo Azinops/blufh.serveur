@@ -2,6 +2,7 @@
 #define CLASSES_H_INCLUDED
 #include "souris_clavier.h"
 #include "define_info.h"
+#include "allegro5/bitmap.h"
 class objet
 {
 public:
@@ -21,7 +22,7 @@ public:
     void atterir();
     void deplacer(double dx,double dy);
     void dimensionner(ALLEGRO_BITMAP* imagei);
-    void initialiser(double xi,double yi,ALLEGRO_BITMAP* imagei,double taillei);
+    void initialiser(double xi,double yi,ALLEGRO_BITMAP* image_i,double taillei);
     void fixer_transparance(int ntransparance);
     void changer_angle(double nv_angle);
     void changer_centre(double nx,double ny);

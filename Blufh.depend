@@ -15,7 +15,7 @@
 	"v_affichage.h"
 	"Classes.h"
 
-1372621132 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\allegro.h
+1372624732 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\allegro.h
 	"allegro5/base.h"
 	"allegro5/altime.h"
 	"allegro5/bitmap.h"
@@ -50,7 +50,7 @@
 	"allegro5/utf8.h"
 	"allegro5/alcompat.h"
 
-1372621132 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\base.h
+1372624732 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\base.h
 	<errno.h>
 	<limits.h>
 	<limits.h>
@@ -64,7 +64,7 @@
 	<dmalloc.h>
 	"allegro5/internal/alconfig.h"
 
-1372621132 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\internal\alconfig.h
+1372624732 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\internal\alconfig.h
 	"allegro5/platform/alplatf.h"
 	"allegro5/platform/alwatcom.h"
 	"allegro5/platform/almngw32.h"
@@ -76,9 +76,9 @@
 	"allegro5/platform/astdint.h"
 	"allegro5/platform/astdbool.h"
 
-1372622328 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\platform\alplatf.h
+1372625928 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\platform\alplatf.h
 
-1368962708 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\platform\alwatcom.h
+1368966308 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\platform\alwatcom.h
 	<io.h>
 	<i86.h>
 	<conio.h>
@@ -86,174 +86,174 @@
 	<direct.h>
 	<malloc.h>
 
-1368962708 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\platform\almngw32.h
+1368966308 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\platform\almngw32.h
 	<io.h>
 	<fcntl.h>
 	<direct.h>
 	<malloc.h>
 	"allegro5/platform/alplatf.h"
 
-1368962708 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\platform\albcc32.h
+1368966308 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\platform\albcc32.h
 	<io.h>
 	<fcntl.h>
 	<direct.h>
 	<malloc.h>
 
-1368962708 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\platform\almsvc.h
+1368966308 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\platform\almsvc.h
 	<io.h>
 	<fcntl.h>
 	<direct.h>
 	<malloc.h>
 	"allegro5/platform/alplatf.h"
 
-1362323900 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\platform\aliphonecfg.h
+1362327500 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\platform\aliphonecfg.h
 	<fcntl.h>
 	<unistd.h>
 
-1368962708 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\platform\alosxcfg.h
+1368966308 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\platform\alosxcfg.h
 	"allegro5/platform/alplatf.h"
 
-1368962708 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\platform\alucfg.h
+1368966308 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\platform\alucfg.h
 	<fcntl.h>
 	<unistd.h>
 	"alunix.h"
 	"allegro5/platform/alplatf.h"
 
-1362323900 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\platform\alunix.h
+1362327500 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\platform\alunix.h
 
-1362323900 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\platform\astdint.h
+1362327500 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\platform\astdint.h
 	<inttypes.h>
 	<stdint.h>
 
-1362323900 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\platform\astdbool.h
+1362327500 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\platform\astdbool.h
 	<stdbool.h>
 
-1362323900 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\altime.h
+1362327500 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\altime.h
 	"allegro5/base.h"
 
-1372621132 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\bitmap.h
+1372624732 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\bitmap.h
 	"allegro5/color.h"
 
-1372621132 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\color.h
+1372624732 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\color.h
 	"allegro5/base.h"
 
-1362323900 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\bitmap_draw.h
+1362327500 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\bitmap_draw.h
 	"allegro5/bitmap.h"
 
-1372621132 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\bitmap_io.h
+1372624732 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\bitmap_io.h
 	"allegro5/bitmap.h"
 	"allegro5/file.h"
 
-1362323900 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\file.h
+1362327500 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\file.h
 	"allegro5/base.h"
 	"allegro5/path.h"
 	"allegro5/utf8.h"
 
-1362323900 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\path.h
+1362327500 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\path.h
 	"allegro5/base.h"
 
-1362323900 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\utf8.h
+1362327500 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\utf8.h
 	"allegro5/base.h"
 
-1362323900 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\bitmap_lock.h
+1362327500 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\bitmap_lock.h
 	"allegro5/bitmap.h"
 
-1372621084 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\blender.h
+1372624684 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\blender.h
 
-1372621132 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\config.h
+1372624732 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\config.h
 	"allegro5/file.h"
 
-1372621132 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\debug.h
+1372624732 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\debug.h
 	<assert.h>
 	"allegro5/base.h"
 
-1372621132 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\display.h
+1372624732 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\display.h
 	"allegro5/bitmap.h"
 	"allegro5/color.h"
 	"allegro5/events.h"
 
-1372621132 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\events.h
+1372624732 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\events.h
 	"allegro5/altime.h"
 
-1372621132 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\drawing.h
+1372624732 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\drawing.h
 	"allegro5/color.h"
 
-1362323900 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\error.h
+1362327500 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\error.h
 	"allegro5/base.h"
 
-1362323900 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\fixed.h
+1362327500 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\fixed.h
 	"allegro5/base.h"
 
-1362323900 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\fmaths.h
+1362327500 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\fmaths.h
 	"allegro5/base.h"
 	"allegro5/fixed.h"
 	"allegro5/inline/fmaths.inl"
 
-1368962708 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\inline\fmaths.inl
+1368966308 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\inline\fmaths.inl
 	"allegro5/error.h"
 
-1362323900 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\fshook.h
+1362327500 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\fshook.h
 	"allegro5/base.h"
 	"allegro5/file.h"
 	"allegro5/path.h"
 	<sys/types.h>
 
-1362323900 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\fullscreen_mode.h
+1362327500 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\fullscreen_mode.h
 
-1372621132 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\joystick.h
+1372624732 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\joystick.h
 	"allegro5/base.h"
 	"allegro5/events.h"
 
-1362323900 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\keyboard.h
+1362327500 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\keyboard.h
 	"allegro5/base.h"
 	"allegro5/events.h"
 	"allegro5/keycodes.h"
 
-1372621132 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\keycodes.h
+1372624732 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\keycodes.h
 
-1362323900 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\memory.h
+1362327500 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\memory.h
 
-1362323900 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\monitor.h
+1362327500 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\monitor.h
 
-1362323900 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\mouse.h
+1362327500 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\mouse.h
 	"allegro5/base.h"
 	"allegro5/events.h"
 
-1362323900 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\mouse_cursor.h
+1362327500 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\mouse_cursor.h
 	"allegro5/base.h"
 
-1362323900 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\system.h
+1362327500 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\system.h
 	"allegro5/config.h"
 	"allegro5/path.h"
 
-1362323900 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\threads.h
+1362327500 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\threads.h
 	"allegro5/altime.h"
 
-1362323900 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\timer.h
+1362327500 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\timer.h
 	"allegro5/base.h"
 
-1362323900 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\tls.h
+1362327500 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\tls.h
 	"allegro5/base.h"
 
-1372621132 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\transformations.h
+1372624732 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\transformations.h
 	"allegro5/display.h"
 
-1372621132 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\alcompat.h
+1372624732 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\alcompat.h
 
-1372621132 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\allegro_native_dialog.h
+1372624732 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\allegro_native_dialog.h
 	"allegro5/allegro.h"
 
-1372621132 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\allegro_font.h
+1372624732 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\allegro_font.h
 	"allegro5/allegro.h"
 
-1362323900 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\allegro_ttf.h
+1362327500 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\allegro_ttf.h
 	"allegro5/allegro.h"
 	"allegro5/allegro_font.h"
 
-1372621132 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\allegro_primitives.h
+1372624732 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\allegro_primitives.h
 	<allegro5/allegro.h>
 
-1362323900 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\allegro_image.h
+1362327500 c:\users\edgar\desktop\tout\programmation\allegro\allegro-5.0.10-mingw-4.7.0\include\allegro5\allegro_image.h
 
 1584885716 c:\users\edgar\desktop\tout\programmation\allegro\blufh\affichage.h
 	<stdio.h>
@@ -627,7 +627,7 @@
 
 1585346581 c:\users\edgar\desktop\tout\programmation\blufh\sockets.h
 
-1584885726 source:c:\users\edgar\desktop\tout\programmation\blufh.serveur\affichage.cpp
+1584889326 source:c:\users\edgar\desktop\tout\programmation\blufh.serveur\affichage.cpp
 	<stdio.h>
 	<time.h>
 	<stdlib.h>
@@ -643,7 +643,7 @@
 	"v_affichage.h"
 	"Classes.h"
 
-1584885718 c:\users\edgar\desktop\tout\programmation\blufh.serveur\affichage.h
+1584889318 c:\users\edgar\desktop\tout\programmation\blufh.serveur\affichage.h
 	<stdio.h>
 	<time.h>
 	<stdlib.h>
@@ -655,11 +655,12 @@
 	<allegro5/allegro_image.h>
 	"Classes.h"
 
-1585419647 c:\users\edgar\desktop\tout\programmation\blufh.serveur\classes.h
+1585505451 c:\users\edgar\desktop\tout\programmation\blufh.serveur\classes.h
 	"souris_clavier.h"
 	"define_info.h"
+	"allegro5/bitmap.h"
 
-1584738880 c:\users\edgar\desktop\tout\programmation\blufh.serveur\souris_clavier.h
+1584742480 c:\users\edgar\desktop\tout\programmation\blufh.serveur\souris_clavier.h
 	<iostream>
 	<stdio.h>
 	<time.h>
@@ -674,47 +675,47 @@
 	<math.h>
 	"fonctions.h"
 
-1585400077 c:\users\edgar\desktop\tout\programmation\blufh.serveur\fonctions.h
+1585565945 c:\users\edgar\desktop\tout\programmation\blufh.serveur\fonctions.h
 	<sstream>
 
-1585319837 c:\users\edgar\desktop\tout\programmation\blufh.serveur\define_info.h
+1585566955 c:\users\edgar\desktop\tout\programmation\blufh.serveur\define_info.h
 
-1573394786 c:\users\edgar\desktop\tout\programmation\blufh.serveur\v_affichage.h
+1573398386 c:\users\edgar\desktop\tout\programmation\blufh.serveur\v_affichage.h
 	"Classes.h"
 	"define_info.h"
 
-1585333014 source:c:\users\edgar\desktop\tout\programmation\blufh.serveur\classes.cpp
+1585505916 source:c:\users\edgar\desktop\tout\programmation\blufh.serveur\classes.cpp
 	"Classes.h"
 	"affichage.h"
 	"define_info.h"
 	"f_map.h"
 
-1585419433 c:\users\edgar\desktop\tout\programmation\blufh.serveur\f_map.h
+1585423033 c:\users\edgar\desktop\tout\programmation\blufh.serveur\f_map.h
 	"define_info.h"
 	"Classes.h"
 
-1585397247 source:c:\users\edgar\desktop\tout\programmation\blufh.serveur\client_sockets.cpp
+1585502351 source:c:\users\edgar\desktop\tout\programmation\blufh.serveur\client_sockets.cpp
 	"client_sockets.h"
 	"sockets.h"
 
-1585320617 c:\users\edgar\desktop\tout\programmation\blufh.serveur\client_sockets.h
+1585502376 c:\users\edgar\desktop\tout\programmation\blufh.serveur\client_sockets.h
 	<winsock2.h>
 	<cstdio>
 	<iostream>
 	"sockets.h"
 
-1585399623 c:\users\edgar\desktop\tout\programmation\blufh.serveur\sockets.h
+1585519525 c:\users\edgar\desktop\tout\programmation\blufh.serveur\sockets.h
 
-1584643162 source:c:\users\edgar\desktop\tout\programmation\blufh.serveur\collisions.cpp
+1584646762 source:c:\users\edgar\desktop\tout\programmation\blufh.serveur\collisions.cpp
 
-1584886702 source:c:\users\edgar\desktop\tout\programmation\blufh.serveur\f_main.cpp
+1584890302 source:c:\users\edgar\desktop\tout\programmation\blufh.serveur\f_main.cpp
 	"f_main.h"
 	"Classes.h"
 
-1584885778 c:\users\edgar\desktop\tout\programmation\blufh.serveur\f_main.h
+1584889378 c:\users\edgar\desktop\tout\programmation\blufh.serveur\f_main.h
 	"Classes.h"
 
-1585294655 source:c:\users\edgar\desktop\tout\programmation\blufh.serveur\fonctions.cpp
+1585298255 source:c:\users\edgar\desktop\tout\programmation\blufh.serveur\fonctions.cpp
 	<stdio.h>
 	<time.h>
 	<iostream>
@@ -728,19 +729,19 @@
 	<math.h>
 	"fonctions.h"
 
-1585297492 source:c:\users\edgar\desktop\tout\programmation\blufh.serveur\get.cpp
+1585301092 source:c:\users\edgar\desktop\tout\programmation\blufh.serveur\get.cpp
 	"Classes.h"
 	"affichage.h"
 	"define_info.h"
 	<allegro5/allegro.h>
 	<allegro5/allegro_image.h>
 
-1585327043 source:c:\users\edgar\desktop\tout\programmation\blufh.serveur\initialisations.cpp
+1585505315 source:c:\users\edgar\desktop\tout\programmation\blufh.serveur\initialisations.cpp
 	"Classes.h"
 	"affichage.h"
 	"define_info.h"
 
-1585421626 source:c:\users\edgar\desktop\tout\programmation\blufh.serveur\map.cpp
+1585425226 source:c:\users\edgar\desktop\tout\programmation\blufh.serveur\map.cpp
 	"map.h"
 	"affichage.h"
 	<allegro5/allegro.h>
@@ -753,12 +754,12 @@
 	"fonctions.h"
 	"Classes.h"
 
-1585418724 c:\users\edgar\desktop\tout\programmation\blufh.serveur\map.h
+1585422324 c:\users\edgar\desktop\tout\programmation\blufh.serveur\map.h
 	<allegro5/allegro.h>
 	"define_info.h"
 	"Classes.h"
 
-1585328661 source:c:\users\edgar\desktop\tout\programmation\blufh.serveur\souris_clavier.cpp
+1585332261 source:c:\users\edgar\desktop\tout\programmation\blufh.serveur\souris_clavier.cpp
 	<iostream>
 	<stdio.h>
 	<time.h>
@@ -779,10 +780,10 @@
 	"affichage.h"
 	"f_map.h"
 
-1573834224 c:\users\edgar\desktop\tout\programmation\blufh.serveur\v_souris_clavier.h
+1573837824 c:\users\edgar\desktop\tout\programmation\blufh.serveur\v_souris_clavier.h
 	"souris_clavier.h"
 
-1585427410 source:c:\users\edgar\desktop\tout\programmation\blufh.serveur\main.cpp
+1585508287 source:c:\users\edgar\desktop\tout\programmation\blufh.serveur\main.cpp
 	<iostream>
 	<stdio.h>
 	<time.h>
@@ -797,7 +798,6 @@
 	<windows.h>
 	<math.h>
 	<winsock2.h>
-	<thread>
 	"fonctions.h"
 	"affichage.h"
 	"variables_main.h"
@@ -807,7 +807,7 @@
 	"f_main.h"
 	"sockets.h"
 
-1585418864 c:\users\edgar\desktop\tout\programmation\blufh.serveur\variables_main.h
+1585422464 c:\users\edgar\desktop\tout\programmation\blufh.serveur\variables_main.h
 	<iostream>
 	<stdio.h>
 	<stdlib.h>

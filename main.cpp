@@ -12,7 +12,6 @@
 #include <windows.h>
 #include <math.h>
 #include <winsock2.h>
-#include <thread>
 #pragma comment(lib,"ws2_32.lib")
 
 #include "fonctions.h"
@@ -23,7 +22,6 @@
 #include "f_map.h"
 #include "f_main.h"
 #include "sockets.h"
-#define IP "192.168.1.12"
 
 using namespace std;
 
@@ -37,16 +35,16 @@ int main()
 
     cout<<"CHARGEMENT"<<endl;
     INITIALISER_IMAGE_EN_MASSE(iLance_bombe,NI_LANCES_BOMBES,"./images/lances_bombes/")
+    ALLEGRO_BITMAP* iBombe=al_load_bitmap("./images/bombes/1.png");
     INITIALISER_IMAGE_EN_MASSE(iBlocs,NI_BLOCS,"./images/blocs/")
     INITIALISER_IMAGE_EN_MASSE(iExplo1,NI_EXPLO1,"./images/explosion_bombe_jetable/")
     INITIALISER_IMAGE_EN_MASSE(iExplo3,NI_EXPLO3,"./images/explosion_centre_bombe_croix/")
-    INITIALISER_IMAGE_EN_MASSE(iBombes,NI_BOMBES,"./images/bombes/")
     INITIALISER_IMAGE_EN_MASSE(iExplo2,NI_EXPLO2,"./images/explosion_croix/")
     INITIALISER_IMAGE_EN_MASSE(iExplo4,NI_EXPLO4,"./images/explosion_croix2/")
     cout<<endl<<"Fini"<<endl;
 
-    bombe bombe_de_jet(iBombes[1],iExplo1,0,iExplo4,TAILLE_EXPLO3I,TAILLE_EXPLO4I,NI_EXPLO1,NI_EXPLO4,VITESSE_ANIM_BOMBE,VITESSE_ANIM_BOMBE_CROIX2);
-    bombe bombe_pieges(iBombes[1],iExplo3,1,iExplo2,TAILLE_EXPLO3I,TAILLE_EXPLO2I,NI_EXPLO3,NI_EXPLO2,VITESSE_ANIM_BOMBE2,VITESSE_ANIM_BOMBE_CROIX);
+    bombe bombe_de_jet(iBombe,iExplo1,0,iExplo4,TAILLE_EXPLO3I,TAILLE_EXPLO4I,NI_EXPLO1,NI_EXPLO4,VITESSE_ANIM_BOMBE,VITESSE_ANIM_BOMBE_CROIX2);
+    bombe bombe_pieges(iBombe,iExplo3,1,iExplo2,TAILLE_EXPLO3I,TAILLE_EXPLO2I,NI_EXPLO3,NI_EXPLO2,VITESSE_ANIM_BOMBE2,VITESSE_ANIM_BOMBE_CROIX);
 
     init_map(iBlocs);
 
@@ -61,71 +59,80 @@ int main()
     coder_map(msg_map);
 
 
-    char ip_client[256]=IP;
-    //cin>>ip_client;
-
-    init_w(IP);
+    init_w();
     init_soc_receptrice();
 
     char attente[256]="en attente d'un joueur";
     cout<<attente<<endl;
 
     char *reception_j=NULL;
-    reception_j=recevoir_msg();
+    reception_j=recevoir_msg_serveur();
     cout<<reception_j<<endl;
 
 
-    envoyer_msg(msg_map);
+    envoyer_msg_server_to_client(msg_map);
     cout<<"Map envoyee"<<endl;
 
 
     char *reception_j2=NULL;
-    reception_j2=recevoir_msg();
+    reception_j2=recevoir_msg_serveur();
     cout<<reception_j2<<", la partie peut commencer"<<endl;
 
-
+    int type_msg=0;//0:normal 1:nouvelle map  2:quitter
+    int ea=0;
     al_start_timer(timer);
     while(!fin)
     {
 
         OBTENIRMOUSEETKEY
-        EVENT
-        if(event.type==ALLEGRO_EVENT_KEY_DOWN && !fin)
+        recevoir_touches(recevoir_msg_serveur());
+        fin=joueurs[1].jouer_en_ligne();
+        if(!fin)
         {
-            if(touche_appuyee(TOUCHE_RECOMMENCER))
+            al_clear_to_color(beigef);
+            type_msg=0;
+            init_joueurs(joueurs);
+            afficher_map();
+            Jouer(joueurs);
+            afficher_score(joueurs,font_scores);
+            afficher_explosions(joueurs);
+
+            if(touche_appuyee(TOUCHE_RECOMMENCER) && ea==0)
+            {
+                ea=1;
+                type_msg=1;
+            }
+            if(touche_appuyee(TOUCHE_QUITTER))
+            {
+                type_msg=2;
+            }
+            if(type_msg==0)
+            {
+                if(!touche_appuyee(TOUCHE_RECOMMENCER))
+                {
+                    ea=0;
+                }
+                Codage_donnees(joueurs);
+                envoyer_msg_server_to_client(get_packet());
+            }
+            if(type_msg==1)
             {
                 init_map(iBlocs);
                 copier_joueurs(joueurs,joueurs_i);
                 encoder_charactere(msg_map,'M');
                 coder_map(msg_map);
-                envoyer_msg(msg_map);
+                envoyer_msg_server_to_client(msg_map);
             }
-            if(touche_appuyee(TOUCHE_QUITTER))
+            if(type_msg==2)
             {
-                envoyer_msg("F");
+                envoyer_msg_server_to_client("F");
                 fin=1;
             }
+
         }
-        if(event.type == ALLEGRO_EVENT_TIMER && !fin)
-        {
-            al_clear_to_color(beigef);
-            Codage_donnees(joueurs);
-            envoyer_msg(get_packet());
-            recevoir_touches(recevoir_msg());
-            fin=joueurs[1].jouer_en_ligne();
-            if(!fin)
-            {
-                init_joueurs(joueurs);
-                afficher_map();
-                Jouer(joueurs);
-                afficher_score(joueurs,font_scores);
-                afficher_explosions(joueurs);
-                al_flip_display();
-            }
-        }
+        al_flip_display();
     }
 
-    fermer_socket();
     fermer_socket_receptrice();
     return 0;
 }
