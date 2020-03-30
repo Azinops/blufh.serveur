@@ -644,3 +644,4 @@ int lance_bombe::jouer_en_ligne()
     }
     return f;
 }
+

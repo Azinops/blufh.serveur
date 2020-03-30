@@ -34,4 +34,5 @@ void Codage_donnees(lance_bombe j[NBRE_JOUEURS]);
 char* get_packet();
 void encoder_charactere(char* chaine,char charactere);
 void recevoir_touches(char* packet);
+char* coder_donnes();
 #endif // F_MAP_H_INCLUDED

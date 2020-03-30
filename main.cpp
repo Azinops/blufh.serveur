@@ -65,17 +65,22 @@ int main()
     char attente[256]="en attente d'un joueur";
     cout<<attente<<endl;
 
+    char donnees[NBRE_CHIFFRE_CODAGE_DOUBLE+2*NBRE_CHIFFRE_CODAGE_INT];
+    coder_double(FPS,donnees,0);
+    coder_int(N_CASES_X,donnees,NBRE_CHIFFRE_CODAGE_DOUBLE);
+    coder_int(N_CASES_Y,donnees,NBRE_CHIFFRE_CODAGE_DOUBLE+NBRE_CHIFFRE_CODAGE_INT);
+    char *reception_j2=NULL;
+    reception_j2=recevoir_msg_serveur();
+    envoyer_msg_server_to_client(donnees);
+
     char *reception_j=NULL;
     reception_j=recevoir_msg_serveur();
     cout<<reception_j<<endl;
-
-
     envoyer_msg_server_to_client(msg_map);
     cout<<"Map envoyee"<<endl;
 
 
-    char *reception_j2=NULL;
-    reception_j2=recevoir_msg_serveur();
+
     cout<<reception_j2<<", la partie peut commencer"<<endl;
 
     int type_msg=0;//0:normal 1:nouvelle map  2:quitter
@@ -83,7 +88,6 @@ int main()
     al_start_timer(timer);
     while(!fin)
     {
-
         OBTENIRMOUSEETKEY
         recevoir_touches(recevoir_msg_serveur());
         fin=joueurs[1].jouer_en_ligne();
