@@ -675,7 +675,7 @@
 	<math.h>
 	"fonctions.h"
 
-1585592688 c:\users\edgar\desktop\tout\programmation\blufh.serveur\fonctions.h
+1585608108 c:\users\edgar\desktop\tout\programmation\blufh.serveur\fonctions.h
 	<sstream>
 
 1585592543 c:\users\edgar\desktop\tout\programmation\blufh.serveur\define_info.h
@@ -694,7 +694,7 @@
 	"define_info.h"
 	"Classes.h"
 
-1585581442 source:c:\users\edgar\desktop\tout\programmation\blufh.serveur\client_sockets.cpp
+1585653826 source:c:\users\edgar\desktop\tout\programmation\blufh.serveur\client_sockets.cpp
 	"client_sockets.h"
 	"sockets.h"
 
@@ -783,7 +783,7 @@
 1573837824 c:\users\edgar\desktop\tout\programmation\blufh.serveur\v_souris_clavier.h
 	"souris_clavier.h"
 
-1585591859 source:c:\users\edgar\desktop\tout\programmation\blufh.serveur\main.cpp
+1585608767 source:c:\users\edgar\desktop\tout\programmation\blufh.serveur\main.cpp
 	<iostream>
 	<stdio.h>
 	<time.h>

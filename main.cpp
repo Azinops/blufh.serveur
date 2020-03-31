@@ -65,7 +65,7 @@ int main()
     char attente[256]="en attente d'un joueur";
     cout<<attente<<endl;
 
-    char donnees[NBRE_CHIFFRE_CODAGE_DOUBLE+2*NBRE_CHIFFRE_CODAGE_INT];
+    char donnees[NBRE_CHIFFRE_CODAGE_DOUBLE+2*NBRE_CHIFFRE_CODAGE_INT+1];
     coder_double(FPS,donnees,0);
     coder_int(N_CASES_X,donnees,NBRE_CHIFFRE_CODAGE_DOUBLE);
     coder_int(N_CASES_Y,donnees,NBRE_CHIFFRE_CODAGE_DOUBLE+NBRE_CHIFFRE_CODAGE_INT);
